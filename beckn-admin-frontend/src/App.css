@@ -1,0 +1,21 @@
+.FormCard  {
+  margin: 20px;
+  width: 60%;
+}
+
+.PlatformCard  {
+  margin: 20px;
+  width: 60%;
+}
+
+.platformDetailsHeader {
+  text-transform: capitalize;
+}
+
+.FormCard .form-group {
+  position: relative;
+}
+
+.FormTitle  {
+  font-size: xx-large !important;
+}

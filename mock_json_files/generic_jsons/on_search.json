@@ -1,0 +1,814 @@
+{
+    "context": {
+      "domain": "domain",
+      "country": "string",
+      "city": "string",
+      "action": "on_search",
+      "core_version": "string",
+      "bap_id": "string",
+      "bap_uri": "string",
+      "bpp_id": "string",
+      "bpp_uri": "string",
+      "transaction_id": "string",
+      "message_id": "string",
+      "timestamp": "2021-03-23T10:00:40.065Z",
+      "key": "string",
+      "ttl": "string"
+    },
+    "message": {
+      "catalog": {
+        "bpp/descriptor": {
+          "name": "string",
+          "code": "string",
+          "symbol": "string",
+          "short_desc": "string",
+          "long_desc": "string",
+          "images": [
+            "string"
+          ],
+          "audio": "string",
+          "3d_render": "string"
+        },
+        "bpp/categories": [
+          {
+            "id": "string",
+            "parent_category_id": "string",
+            "descriptor": {
+              "name": "string",
+              "code": "string",
+              "symbol": "string",
+              "short_desc": "string",
+              "long_desc": "string",
+              "images": [
+                "string"
+              ],
+              "audio": "string",
+              "3d_render": "string"
+            },
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-23T10:00:40.065Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-23T10:00:40.065Z",
+                "end": "2021-03-23T10:00:40.065Z"
+              },
+              "days": "string"
+            },
+            "tags": [
+              {
+                "additionalProp1": "string",
+                "additionalProp2": "string",
+                "additionalProp3": "string"
+              }
+            ]
+          }
+        ],
+        "bpp/fulfillments": [
+          {
+            "id": "string",
+            "type": "string",
+            "state": {
+              "descriptor": {
+                "name": "string",
+                "code": "string",
+                "symbol": "string",
+                "short_desc": "string",
+                "long_desc": "string",
+                "images": [
+                  "string"
+                ],
+                "audio": "string",
+                "3d_render": "string"
+              },
+              "updated_at": "2021-03-23T10:00:40.066Z",
+              "updated_by": "string"
+            },
+            "tracking": false,
+            "agent": {
+              "name": {
+                "full": "string",
+                "additional_name": "string",
+                "family_name": "string",
+                "given_name": "string",
+                "call_sign": "string",
+                "honorific_prefix": "string",
+                "honorific_suffix": "string"
+              },
+              "image": "string",
+              "dob": "2021-03-23",
+              "gender": "string",
+              "cred": "string",
+              "tags": [
+                {
+                  "additionalProp1": "string",
+                  "additionalProp2": "string",
+                  "additionalProp3": "string"
+                }
+              ],
+              "phone": "string",
+              "email": "string"
+            },
+            "vehicle": {
+              "category": "string",
+              "capacity": 0,
+              "make": "string",
+              "model": "string",
+              "size": "string",
+              "variant": "string",
+              "color": "string",
+              "energy_type": "string",
+              "registration": "string"
+            },
+            "start": {
+              "location": {
+                "id": "string",
+                "descriptor": {
+                  "name": "string",
+                  "code": "string",
+                  "symbol": "string",
+                  "short_desc": "string",
+                  "long_desc": "string",
+                  "images": [
+                    "string"
+                  ],
+                  "audio": "string",
+                  "3d_render": "string"
+                },
+                "gps": "string",
+                "address": {
+                  "door": "string",
+                  "name": "string",
+                  "building": "string",
+                  "street": "string",
+                  "locality": "string",
+                  "ward": "string",
+                  "city": "string",
+                  "state": "string",
+                  "country": "string",
+                  "area_code": "string"
+                },
+                "station_code": "string",
+                "city": {
+                  "name": "string",
+                  "code": "string"
+                },
+                "country": {
+                  "name": "string",
+                  "code": "string"
+                },
+                "circle": "string",
+                "polygon": "string",
+                "3dspace": "string"
+              },
+              "time": {
+                "label": "string",
+                "timestamp": "2021-03-23T10:00:40.066Z",
+                "duration": "string",
+                "range": {
+                  "start": "2021-03-23T10:00:40.066Z",
+                  "end": "2021-03-23T10:00:40.066Z"
+                },
+                "days": "string"
+              },
+              "instructions": {
+                "name": "string",
+                "code": "string",
+                "symbol": "string",
+                "short_desc": "string",
+                "long_desc": "string",
+                "images": [
+                  "string"
+                ],
+                "audio": "string",
+                "3d_render": "string"
+              },
+              "contact": {
+                "phone": "string",
+                "email": "string",
+                "tags": {
+                  "additionalProp1": "string",
+                  "additionalProp2": "string",
+                  "additionalProp3": "string"
+                }
+              }
+            },
+            "end": {
+              "location": {
+                "id": "string",
+                "descriptor": {
+                  "name": "string",
+                  "code": "string",
+                  "symbol": "string",
+                  "short_desc": "string",
+                  "long_desc": "string",
+                  "images": [
+                    "string"
+                  ],
+                  "audio": "string",
+                  "3d_render": "string"
+                },
+                "gps": "string",
+                "address": {
+                  "door": "string",
+                  "name": "string",
+                  "building": "string",
+                  "street": "string",
+                  "locality": "string",
+                  "ward": "string",
+                  "city": "string",
+                  "state": "string",
+                  "country": "string",
+                  "area_code": "string"
+                },
+                "station_code": "string",
+                "city": {
+                  "name": "string",
+                  "code": "string"
+                },
+                "country": {
+                  "name": "string",
+                  "code": "string"
+                },
+                "circle": "string",
+                "polygon": "string",
+                "3dspace": "string"
+              },
+              "time": {
+                "label": "string",
+                "timestamp": "2021-03-23T10:00:40.066Z",
+                "duration": "string",
+                "range": {
+                  "start": "2021-03-23T10:00:40.066Z",
+                  "end": "2021-03-23T10:00:40.066Z"
+                },
+                "days": "string"
+              },
+              "instructions": {
+                "name": "string",
+                "code": "string",
+                "symbol": "string",
+                "short_desc": "string",
+                "long_desc": "string",
+                "images": [
+                  "string"
+                ],
+                "audio": "string",
+                "3d_render": "string"
+              },
+              "contact": {
+                "phone": "string",
+                "email": "string",
+                "tags": {
+                  "additionalProp1": "string",
+                  "additionalProp2": "string",
+                  "additionalProp3": "string"
+                }
+              }
+            },
+            "purpose": "string",
+            "tags": [
+              {
+                "additionalProp1": "string",
+                "additionalProp2": "string",
+                "additionalProp3": "string"
+              }
+            ]
+          }
+        ],
+        "bpp/payments": [
+          {
+            "uri": "string",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "string",
+              "amount": "string",
+              "additionalProp1": "string",
+              "additionalProp2": "string",
+              "additionalProp3": "string"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-23T10:00:40.066Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-23T10:00:40.066Z",
+                "end": "2021-03-23T10:00:40.066Z"
+              },
+              "days": "string"
+            }
+          }
+        ],
+        "bpp/offers": [
+          {
+            "id": "string",
+            "descriptor": {
+              "name": "string",
+              "code": "string",
+              "symbol": "string",
+              "short_desc": "string",
+              "long_desc": "string",
+              "images": [
+                "string"
+              ],
+              "audio": "string",
+              "3d_render": "string"
+            },
+            "location_ids": [
+              "string"
+            ],
+            "category_ids": [
+              "string"
+            ],
+            "item_ids": [
+              "string"
+            ],
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-23T10:00:40.066Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-23T10:00:40.066Z",
+                "end": "2021-03-23T10:00:40.066Z"
+              },
+              "days": "string"
+            }
+          }
+        ],
+        "bpp/providers": [
+          {
+            "id": "string",
+            "descriptor": {
+              "name": "string",
+              "code": "string",
+              "symbol": "string",
+              "short_desc": "string",
+              "long_desc": "string",
+              "images": [
+                "string"
+              ],
+              "audio": "string",
+              "3d_render": "string"
+            },
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-23T10:00:40.066Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-23T10:00:40.066Z",
+                "end": "2021-03-23T10:00:40.066Z"
+              },
+              "days": "string"
+            },
+            "locations": [
+              {
+                "id": "string",
+                "descriptor": {
+                  "name": "string",
+                  "code": "string",
+                  "symbol": "string",
+                  "short_desc": "string",
+                  "long_desc": "string",
+                  "images": [
+                    "string"
+                  ],
+                  "audio": "string",
+                  "3d_render": "string"
+                },
+                "gps": "string",
+                "address": {
+                  "door": "string",
+                  "name": "string",
+                  "building": "string",
+                  "street": "string",
+                  "locality": "string",
+                  "ward": "string",
+                  "city": "string",
+                  "state": "string",
+                  "country": "string",
+                  "area_code": "string"
+                },
+                "station_code": "string",
+                "city": {
+                  "name": "string",
+                  "code": "string"
+                },
+                "country": {
+                  "name": "string",
+                  "code": "string"
+                },
+                "circle": "string",
+                "polygon": "string",
+                "3dspace": "string",
+                "time": {
+                  "label": "string",
+                  "timestamp": "2021-03-23T10:00:40.066Z",
+                  "duration": "string",
+                  "range": {
+                    "start": "2021-03-23T10:00:40.066Z",
+                    "end": "2021-03-23T10:00:40.066Z"
+                  },
+                  "days": "string"
+                }
+              }
+            ],
+            "tags": [
+              {
+                "additionalProp1": "string",
+                "additionalProp2": "string",
+                "additionalProp3": "string"
+              }
+            ],
+            "categories": [
+              {
+                "id": "string",
+                "parent_category_id": "string",
+                "descriptor": {
+                  "name": "string",
+                  "code": "string",
+                  "symbol": "string",
+                  "short_desc": "string",
+                  "long_desc": "string",
+                  "images": [
+                    "string"
+                  ],
+                  "audio": "string",
+                  "3d_render": "string"
+                },
+                "time": {
+                  "label": "string",
+                  "timestamp": "2021-03-23T10:00:40.066Z",
+                  "duration": "string",
+                  "range": {
+                    "start": "2021-03-23T10:00:40.066Z",
+                    "end": "2021-03-23T10:00:40.066Z"
+                  },
+                  "days": "string"
+                },
+                "tags": [
+                  {
+                    "additionalProp1": "string",
+                    "additionalProp2": "string",
+                    "additionalProp3": "string"
+                  }
+                ]
+              }
+            ],
+            "fulfillments": [
+              {
+                "id": "string",
+                "type": "string",
+                "state": {
+                  "descriptor": {
+                    "name": "string",
+                    "code": "string",
+                    "symbol": "string",
+                    "short_desc": "string",
+                    "long_desc": "string",
+                    "images": [
+                      "string"
+                    ],
+                    "audio": "string",
+                    "3d_render": "string"
+                  },
+                  "updated_at": "2021-03-23T10:00:40.066Z",
+                  "updated_by": "string"
+                },
+                "tracking": false,
+                "agent": {
+                  "name": {
+                    "full": "string",
+                    "additional_name": "string",
+                    "family_name": "string",
+                    "given_name": "string",
+                    "call_sign": "string",
+                    "honorific_prefix": "string",
+                    "honorific_suffix": "string"
+                  },
+                  "image": "string",
+                  "dob": "2021-03-23",
+                  "gender": "string",
+                  "cred": "string",
+                  "tags": [
+                    {
+                      "additionalProp1": "string",
+                      "additionalProp2": "string",
+                      "additionalProp3": "string"
+                    }
+                  ],
+                  "phone": "string",
+                  "email": "string"
+                },
+                "vehicle": {
+                  "category": "string",
+                  "capacity": 0,
+                  "make": "string",
+                  "model": "string",
+                  "size": "string",
+                  "variant": "string",
+                  "color": "string",
+                  "energy_type": "string",
+                  "registration": "string"
+                },
+                "start": {
+                  "location": {
+                    "id": "string",
+                    "descriptor": {
+                      "name": "string",
+                      "code": "string",
+                      "symbol": "string",
+                      "short_desc": "string",
+                      "long_desc": "string",
+                      "images": [
+                        "string"
+                      ],
+                      "audio": "string",
+                      "3d_render": "string"
+                    },
+                    "gps": "string",
+                    "address": {
+                      "door": "string",
+                      "name": "string",
+                      "building": "string",
+                      "street": "string",
+                      "locality": "string",
+                      "ward": "string",
+                      "city": "string",
+                      "state": "string",
+                      "country": "string",
+                      "area_code": "string"
+                    },
+                    "station_code": "string",
+                    "city": {
+                      "name": "string",
+                      "code": "string"
+                    },
+                    "country": {
+                      "name": "string",
+                      "code": "string"
+                    },
+                    "circle": "string",
+                    "polygon": "string",
+                    "3dspace": "string",
+                    "time": {
+                      "label": "string",
+                      "timestamp": "2021-03-23T10:00:40.066Z",
+                      "duration": "string",
+                      "range": {
+                        "start": "2021-03-23T10:00:40.066Z",
+                        "end": "2021-03-23T10:00:40.066Z"
+                      },
+                      "days": "string"
+                    }
+                  },
+                  "time": {
+                    "label": "string",
+                    "timestamp": "2021-03-23T10:00:40.066Z",
+                    "duration": "string",
+                    "range": {
+                      "start": "2021-03-23T10:00:40.066Z",
+                      "end": "2021-03-23T10:00:40.066Z"
+                    },
+                    "days": "string"
+                  },
+                  "instructions": {
+                    "name": "string",
+                    "code": "string",
+                    "symbol": "string",
+                    "short_desc": "string",
+                    "long_desc": "string",
+                    "images": [
+                      "string"
+                    ],
+                    "audio": "string",
+                    "3d_render": "string"
+                  },
+                  "contact": {
+                    "phone": "string",
+                    "email": "string",
+                    "tags": {
+                      "additionalProp1": "string",
+                      "additionalProp2": "string",
+                      "additionalProp3": "string"
+                    }
+                  }
+                },
+                "end": {
+                  "location": {
+                    "id": "string",
+                    "descriptor": {
+                      "name": "string",
+                      "code": "string",
+                      "symbol": "string",
+                      "short_desc": "string",
+                      "long_desc": "string",
+                      "images": [
+                        "string"
+                      ],
+                      "audio": "string",
+                      "3d_render": "string"
+                    },
+                    "gps": "string",
+                    "address": {
+                      "door": "string",
+                      "name": "string",
+                      "building": "string",
+                      "street": "string",
+                      "locality": "string",
+                      "ward": "string",
+                      "city": "string",
+                      "state": "string",
+                      "country": "string",
+                      "area_code": "string"
+                    },
+                    "station_code": "string",
+                    "city": {
+                      "name": "string",
+                      "code": "string"
+                    },
+                    "country": {
+                      "name": "string",
+                      "code": "string"
+                    },
+                    "circle": "string",
+                    "polygon": "string",
+                    "3dspace": "string",
+                    "time": {
+                      "label": "string",
+                      "timestamp": "2021-03-23T10:00:40.066Z",
+                      "duration": "string",
+                      "range": {
+                        "start": "2021-03-23T10:00:40.066Z",
+                        "end": "2021-03-23T10:00:40.066Z"
+                      },
+                      "days": "string"
+                    }
+                  },
+                  "time": {
+                    "label": "string",
+                    "timestamp": "2021-03-23T10:00:40.066Z",
+                    "duration": "string",
+                    "range": {
+                      "start": "2021-03-23T10:00:40.066Z",
+                      "end": "2021-03-23T10:00:40.066Z"
+                    },
+                    "days": "string"
+                  },
+                  "instructions": {
+                    "name": "string",
+                    "code": "string",
+                    "symbol": "string",
+                    "short_desc": "string",
+                    "long_desc": "string",
+                    "images": [
+                      "string"
+                    ],
+                    "audio": "string",
+                    "3d_render": "string"
+                  },
+                  "contact": {
+                    "phone": "string",
+                    "email": "string",
+                    "tags": {
+                      "additionalProp1": "string",
+                      "additionalProp2": "string",
+                      "additionalProp3": "string"
+                    }
+                  }
+                },
+                "purpose": "string",
+                "tags": [
+                  {
+                    "additionalProp1": "string",
+                    "additionalProp2": "string",
+                    "additionalProp3": "string"
+                  }
+                ]
+              }
+            ],
+            "payments": [
+              {
+                "uri": "string",
+                "tl_method": "http/get",
+                "params": {
+                  "transaction_id": "string",
+                  "amount": "string",
+                  "additionalProp1": "string",
+                  "additionalProp2": "string",
+                  "additionalProp3": "string"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "time": {
+                  "label": "string",
+                  "timestamp": "2021-03-23T10:00:40.066Z",
+                  "duration": "string",
+                  "range": {
+                    "start": "2021-03-23T10:00:40.066Z",
+                    "end": "2021-03-23T10:00:40.066Z"
+                  },
+                  "days": "string"
+                }
+              }
+            ],
+            "offers": [
+              {
+                "id": "string",
+                "descriptor": {
+                  "name": "string",
+                  "code": "string",
+                  "symbol": "string",
+                  "short_desc": "string",
+                  "long_desc": "string",
+                  "images": [
+                    "string"
+                  ],
+                  "audio": "string",
+                  "3d_render": "string"
+                },
+                "location_ids": [
+                  "string"
+                ],
+                "category_ids": [
+                  "string"
+                ],
+                "item_ids": [
+                  "string"
+                ],
+                "time": {
+                  "label": "string",
+                  "timestamp": "2021-03-23T10:00:40.066Z",
+                  "duration": "string",
+                  "range": {
+                    "start": "2021-03-23T10:00:40.066Z",
+                    "end": "2021-03-23T10:00:40.066Z"
+                  },
+                  "days": "string"
+                }
+              }
+            ],
+            "items": [
+              {
+                "id": "string",
+                "parent_item_id": "string",
+                "descriptor": {
+                  "name": "string",
+                  "code": "string",
+                  "symbol": "string",
+                  "short_desc": "string",
+                  "long_desc": "string",
+                  "images": [
+                    "string"
+                  ],
+                  "audio": "string",
+                  "3d_render": "string"
+                },
+                "price": {
+                  "currency": "string",
+                  "value": "string",
+                  "estimated_value": "string",
+                  "computed_value": "string",
+                  "listed_value": "string",
+                  "offered_value": "string",
+                  "minimum_value": "string",
+                  "maximum_value": "string"
+                },
+                "category_id": "string",
+                "location_id": "string",
+                "time": {
+                  "label": "string",
+                  "timestamp": "2021-03-23T10:00:40.066Z",
+                  "duration": "string",
+                  "range": {
+                    "start": "2021-03-23T10:00:40.066Z",
+                    "end": "2021-03-23T10:00:40.066Z"
+                  },
+                  "days": "string"
+                },
+                "matched": true,
+                "related": true,
+                "recommended": true,
+                "tags": [
+                  {
+                    "additionalProp1": "string",
+                    "additionalProp2": "string",
+                    "additionalProp3": "string"
+                  }
+                ]
+              }
+            ],
+            "exp": "2021-03-23T10:00:40.066Z"
+          }
+        ],
+        "exp": "2021-03-23T10:00:40.066Z"
+      }
+    },
+    "error": {
+      "type": "CONTEXT-ERROR",
+      "code": "string",
+      "path": "string",
+      "message": "string"
+    }
+  }

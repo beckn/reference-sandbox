@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "a44f9237-e887-4e24-98df-94b9a000b0be",
+		"name": "Beckn Sandbox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Trigger Search via mock BAP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"domain\": \"local_retail\",\n    \"use_case\": \"on_search/return_category_catalog\",\n    \"ttl\":3000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bap-uri}}/trigger/search",
+					"host": [
+						"{{bap-uri}}"
+					],
+					"path": [
+						"trigger",
+						"search"
+					]
+				},
+				"description": "Triggers search from the mock BAP"
+			},
+			"response": []
+		},
+		{
+			"name": "Trigger Search Directly to a BPP via mock BAP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"domain\": \"delivery\",\n    \"use_case\": \"on_search/return_item_catalog\",\n    \"bpp_uri\": \"{{bpp1-uri}}\",\n    \"ttl\":3000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bap-uri}}/trigger/search",
+					"host": [
+						"{{bap-uri}}"
+					],
+					"path": [
+						"trigger",
+						"search"
+					]
+				},
+				"description": "Triggers search directly to one BPP from the mock BAP without routing through BG"
+			},
+			"response": []
+		},
+		{
+			"name": "Trigger Search Directly to a BPP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "use_case",
+						"value": "on_search/return_item_catalog",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n      \"domain\": \"delivery\",\n      \"country\": \"string\",\n      \"city\": \"string\",\n      \"action\": \"search\",\n      \"core_version\": \"string\",\n      \"bap_id\": \"MOCK_BAP\",\n      \"bap_uri\": \"{{bap-uri}}\",\n      \"bpp_id\": \"MOCK_BPP1\",\n      \"bpp_uri\": \"{{bpp1-uri}}\",\n      \"transaction_id\": \"12387917398173\",\n      \"message_id\": \"string\",\n      \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n      \"key\": \"string\",\n      \"ttl\": \"string\"\n    },\n    \"message\": {\n      \"intent\": {\n        \"query_string\": \"string\",\n        \"provider\": {\n          \"id\": \"string\",\n          \"descriptor\": {\n            \"name\": \"string\",\n            \"code\": \"string\",\n            \"symbol\": \"string\",\n            \"short_desc\": \"string\",\n            \"long_desc\": \"string\",\n            \"images\": [\n              \"string\"\n            ],\n            \"audio\": \"string\",\n            \"3d_render\": \"string\"\n          },\n          \"locations\": [\n            {\n              \"id\": \"string\"\n            }\n          ]\n        },\n        \"fulfillment\": {\n          \"id\": \"string\",\n          \"start\": {\n            \"location\": {\n              \"id\": \"string\",\n              \"descriptor\": {\n                \"name\": \"string\",\n                \"code\": \"string\",\n                \"symbol\": \"string\",\n                \"short_desc\": \"string\",\n                \"long_desc\": \"string\",\n                \"images\": [\n                  \"string\"\n                ],\n                \"audio\": \"string\",\n                \"3d_render\": \"string\"\n              },\n              \"gps\": \"string\",\n              \"address\": {\n                \"door\": \"string\",\n                \"name\": \"string\",\n                \"building\": \"string\",\n                \"street\": \"string\",\n                \"locality\": \"string\",\n                \"ward\": \"string\",\n                \"city\": \"string\",\n                \"state\": \"string\",\n                \"country\": \"string\",\n                \"area_code\": \"string\"\n              },\n              \"station_code\": \"string\",\n              \"city\": {\n                \"name\": \"string\",\n                \"code\": \"string\"\n              },\n              \"country\": {\n                \"name\": \"string\",\n                \"code\": \"string\"\n              },\n              \"circle\": \"string\",\n              \"polygon\": \"string\",\n              \"3dspace\": \"string\"\n            },\n            \"time\": {\n              \"label\": \"string\",\n              \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n              \"duration\": \"string\",\n              \"range\": {\n                \"start\": \"2021-03-22T05:48:04.938Z\",\n                \"end\": \"2021-03-22T05:48:04.938Z\"\n              },\n              \"days\": \"string\"\n            }\n          },\n          \"end\": {\n            \"location\": {\n              \"id\": \"string\",\n              \"descriptor\": {\n                \"name\": \"string\",\n                \"code\": \"string\",\n                \"symbol\": \"string\",\n                \"short_desc\": \"string\",\n                \"long_desc\": \"string\",\n                \"images\": [\n                  \"string\"\n                ],\n                \"audio\": \"string\",\n                \"3d_render\": \"string\"\n              },\n              \"gps\": \"string\",\n              \"address\": {\n                \"door\": \"string\",\n                \"name\": \"string\",\n                \"building\": \"string\",\n                \"street\": \"string\",\n                \"locality\": \"string\",\n                \"ward\": \"string\",\n                \"city\": \"string\",\n                \"state\": \"string\",\n                \"country\": \"string\",\n                \"area_code\": \"string\"\n              },\n              \"station_code\": \"string\",\n              \"city\": {\n                \"name\": \"string\",\n                \"code\": \"string\"\n              },\n              \"country\": {\n                \"name\": \"string\",\n                \"code\": \"string\"\n              },\n              \"circle\": \"string\",\n              \"polygon\": \"string\",\n              \"3dspace\": \"string\"\n            },\n            \"time\": {\n              \"label\": \"string\",\n              \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n              \"duration\": \"string\",\n              \"range\": {\n                \"start\": \"2021-03-22T05:48:04.938Z\",\n                \"end\": \"2021-03-22T05:48:04.938Z\"\n              },\n              \"days\": \"string\"\n            }\n          },\n          \"tags\": {\n            \"additionalProp1\": \"string\",\n            \"additionalProp2\": \"string\",\n            \"additionalProp3\": \"string\"\n          }\n        },\n        \"payment\": {\n          \"uri\": \"string\",\n          \"tl_method\": \"http/get\",\n          \"params\": {\n            \"transaction_id\": \"string\",\n            \"amount\": \"string\",\n            \"additionalProp1\": \"string\",\n            \"additionalProp2\": \"string\",\n            \"additionalProp3\": \"string\"\n          },\n          \"type\": \"ON-ORDER\",\n          \"status\": \"PAID\",\n          \"time\": {\n            \"label\": \"string\",\n            \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n            \"duration\": \"string\",\n            \"range\": {\n              \"start\": \"2021-03-22T05:48:04.938Z\",\n              \"end\": \"2021-03-22T05:48:04.938Z\"\n            },\n            \"days\": \"string\"\n          }\n        },\n        \"category\": {\n          \"id\": \"string\",\n          \"descriptor\": {\n            \"name\": \"string\",\n            \"code\": \"string\",\n            \"symbol\": \"string\",\n            \"short_desc\": \"string\",\n            \"long_desc\": \"string\",\n            \"images\": [\n              \"string\"\n            ],\n            \"audio\": \"string\",\n            \"3d_render\": \"string\"\n          },\n          \"time\": {\n            \"label\": \"string\",\n            \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n            \"duration\": \"string\",\n            \"range\": {\n              \"start\": \"2021-03-22T05:48:04.938Z\",\n              \"end\": \"2021-03-22T05:48:04.938Z\"\n            },\n            \"days\": \"string\"\n          },\n          \"tags\": [\n            {\n              \"additionalProp1\": \"string\",\n              \"additionalProp2\": \"string\",\n              \"additionalProp3\": \"string\"\n            }\n          ]\n        },\n        \"offer\": {\n          \"id\": \"string\",\n          \"descriptor\": {\n            \"name\": \"string\"\n          }\n        },\n        \"item\": {\n          \"id\": \"string\",\n          \"descriptor\": {\n            \"name\": \"string\",\n            \"tags\": {\n              \"additionalProp1\": \"string\",\n              \"additionalProp2\": \"string\",\n              \"additionalProp3\": \"string\"\n            }\n          }\n        },\n        \"purpose\": \"string\",\n        \"tags\": [\n          {\n            \"additionalProp1\": \"string\",\n            \"additionalProp2\": \"string\",\n            \"additionalProp3\": \"string\"\n          }\n        ]\n      }\n    }\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp1-uri}}/search/",
+					"host": [
+						"{{bpp1-uri}}"
+					],
+					"path": [
+						"search",
+						""
+					]
+				},
+				"description": "Triggers search directly to one BPP without going through mock BG"
+			},
+			"response": []
+		},
+		{
+			"name": "Trigger Search Directly to a BPP through BG",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "use_case",
+						"type": "text",
+						"value": "on_search/return_item_catalog"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n      \"domain\": \"delivery\",\n      \"country\": \"string\",\n      \"city\": \"string\",\n      \"action\": \"search\",\n      \"core_version\": \"string\",\n      \"bap_id\": \"MOCK_BAP\",\n      \"bap_uri\": \"{{bap-uri}}\",\n      \"bpp_id\": \"MOCK_BPP1\",\n      \"bpp_uri\": \"{{bpp1-uri}}\",\n      \"transaction_id\": \"12387917398173\",\n      \"message_id\": \"string\",\n      \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n      \"key\": \"string\",\n      \"ttl\": \"string\"\n    },\n    \"message\": {\n      \"intent\": {\n        \"query_string\": \"string\",\n        \"provider\": {\n          \"id\": \"string\",\n          \"descriptor\": {\n            \"name\": \"string\",\n            \"code\": \"string\",\n            \"symbol\": \"string\",\n            \"short_desc\": \"string\",\n            \"long_desc\": \"string\",\n            \"images\": [\n              \"string\"\n            ],\n            \"audio\": \"string\",\n            \"3d_render\": \"string\"\n          },\n          \"locations\": [\n            {\n              \"id\": \"string\"\n            }\n          ]\n        },\n        \"fulfillment\": {\n          \"id\": \"string\",\n          \"start\": {\n            \"location\": {\n              \"id\": \"string\",\n              \"descriptor\": {\n                \"name\": \"string\",\n                \"code\": \"string\",\n                \"symbol\": \"string\",\n                \"short_desc\": \"string\",\n                \"long_desc\": \"string\",\n                \"images\": [\n                  \"string\"\n                ],\n                \"audio\": \"string\",\n                \"3d_render\": \"string\"\n              },\n              \"gps\": \"string\",\n              \"address\": {\n                \"door\": \"string\",\n                \"name\": \"string\",\n                \"building\": \"string\",\n                \"street\": \"string\",\n                \"locality\": \"string\",\n                \"ward\": \"string\",\n                \"city\": \"string\",\n                \"state\": \"string\",\n                \"country\": \"string\",\n                \"area_code\": \"string\"\n              },\n              \"station_code\": \"string\",\n              \"city\": {\n                \"name\": \"string\",\n                \"code\": \"string\"\n              },\n              \"country\": {\n                \"name\": \"string\",\n                \"code\": \"string\"\n              },\n              \"circle\": \"string\",\n              \"polygon\": \"string\",\n              \"3dspace\": \"string\"\n            },\n            \"time\": {\n              \"label\": \"string\",\n              \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n              \"duration\": \"string\",\n              \"range\": {\n                \"start\": \"2021-03-22T05:48:04.938Z\",\n                \"end\": \"2021-03-22T05:48:04.938Z\"\n              },\n              \"days\": \"string\"\n            }\n          },\n          \"end\": {\n            \"location\": {\n              \"id\": \"string\",\n              \"descriptor\": {\n                \"name\": \"string\",\n                \"code\": \"string\",\n                \"symbol\": \"string\",\n                \"short_desc\": \"string\",\n                \"long_desc\": \"string\",\n                \"images\": [\n                  \"string\"\n                ],\n                \"audio\": \"string\",\n                \"3d_render\": \"string\"\n              },\n              \"gps\": \"string\",\n              \"address\": {\n                \"door\": \"string\",\n                \"name\": \"string\",\n                \"building\": \"string\",\n                \"street\": \"string\",\n                \"locality\": \"string\",\n                \"ward\": \"string\",\n                \"city\": \"string\",\n                \"state\": \"string\",\n                \"country\": \"string\",\n                \"area_code\": \"string\"\n              },\n              \"station_code\": \"string\",\n              \"city\": {\n                \"name\": \"string\",\n                \"code\": \"string\"\n              },\n              \"country\": {\n                \"name\": \"string\",\n                \"code\": \"string\"\n              },\n              \"circle\": \"string\",\n              \"polygon\": \"string\",\n              \"3dspace\": \"string\"\n            },\n            \"time\": {\n              \"label\": \"string\",\n              \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n              \"duration\": \"string\",\n              \"range\": {\n                \"start\": \"2021-03-22T05:48:04.938Z\",\n                \"end\": \"2021-03-22T05:48:04.938Z\"\n              },\n              \"days\": \"string\"\n            }\n          },\n          \"tags\": {\n            \"additionalProp1\": \"string\",\n            \"additionalProp2\": \"string\",\n            \"additionalProp3\": \"string\"\n          }\n        },\n        \"payment\": {\n          \"uri\": \"string\",\n          \"tl_method\": \"http/get\",\n          \"params\": {\n            \"transaction_id\": \"string\",\n            \"amount\": \"string\",\n            \"additionalProp1\": \"string\",\n            \"additionalProp2\": \"string\",\n            \"additionalProp3\": \"string\"\n          },\n          \"type\": \"ON-ORDER\",\n          \"status\": \"PAID\",\n          \"time\": {\n            \"label\": \"string\",\n            \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n            \"duration\": \"string\",\n            \"range\": {\n              \"start\": \"2021-03-22T05:48:04.938Z\",\n              \"end\": \"2021-03-22T05:48:04.938Z\"\n            },\n            \"days\": \"string\"\n          }\n        },\n        \"category\": {\n          \"id\": \"string\",\n          \"descriptor\": {\n            \"name\": \"string\",\n            \"code\": \"string\",\n            \"symbol\": \"string\",\n            \"short_desc\": \"string\",\n            \"long_desc\": \"string\",\n            \"images\": [\n              \"string\"\n            ],\n            \"audio\": \"string\",\n            \"3d_render\": \"string\"\n          },\n          \"time\": {\n            \"label\": \"string\",\n            \"timestamp\": \"2021-03-22T05:48:04.938Z\",\n            \"duration\": \"string\",\n            \"range\": {\n              \"start\": \"2021-03-22T05:48:04.938Z\",\n              \"end\": \"2021-03-22T05:48:04.938Z\"\n            },\n            \"days\": \"string\"\n          },\n          \"tags\": [\n            {\n              \"additionalProp1\": \"string\",\n              \"additionalProp2\": \"string\",\n              \"additionalProp3\": \"string\"\n            }\n          ]\n        },\n        \"offer\": {\n          \"id\": \"string\",\n          \"descriptor\": {\n            \"name\": \"string\"\n          }\n        },\n        \"item\": {\n          \"id\": \"string\",\n          \"descriptor\": {\n            \"name\": \"string\",\n            \"tags\": {\n              \"additionalProp1\": \"string\",\n              \"additionalProp2\": \"string\",\n              \"additionalProp3\": \"string\"\n            }\n          }\n        },\n        \"purpose\": \"string\",\n        \"tags\": [\n          {\n            \"additionalProp1\": \"string\",\n            \"additionalProp2\": \"string\",\n            \"additionalProp3\": \"string\"\n          }\n        ]\n      }\n    }\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bg-uri}}/search",
+					"host": [
+						"{{bg-uri}}"
+					],
+					"path": [
+						"search"
+					]
+				},
+				"description": "Triggers search directly to one BPP by going through mock BG"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "bg-uri",
+			"value": "http://13.235.139.60:7777"
+		},
+		{
+			"key": "bap-uri",
+			"value": "http://13.235.139.60:4000"
+		},
+		{
+			"key": "bpp1-uri",
+			"value": "http://13.235.139.60:4444"
+		},
+		{
+			"key": "bpp2-uri",
+			"value": "http://13.235.139.60:5555"
+		}
+	]
+}

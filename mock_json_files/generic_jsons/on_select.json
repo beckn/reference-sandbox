@@ -1,0 +1,357 @@
+{
+    "context": {
+      "domain": "domain",
+      "country": "string",
+      "city": "string",
+      "action": "search",
+      "core_version": "string",
+      "bap_id": "string",
+      "bap_uri": "string",
+      "bpp_id": "string",
+      "bpp_uri": "string",
+      "transaction_id": "string",
+      "message_id": "string",
+      "timestamp": "2021-03-25T07:21:57.484Z",
+      "key": "string",
+      "ttl": "string"
+    },
+    "message": {
+      "selected": {
+        "provider": {
+          "id": "string",
+          "descriptor": {
+            "name": "string",
+            "code": "string",
+            "symbol": "string",
+            "short_desc": "string",
+            "long_desc": "string",
+            "images": [
+              "string"
+            ],
+            "audio": "string",
+            "3d_render": "string"
+          },
+          "time": {
+            "label": "string",
+            "timestamp": "2021-03-25T07:21:57.484Z",
+            "duration": "string",
+            "range": {
+              "start": "2021-03-25T07:21:57.484Z",
+              "end": "2021-03-25T07:21:57.484Z"
+            },
+            "days": "string"
+          },
+          "locations": [
+            {
+              "id": "string",
+              "descriptor": {
+                "name": "string",
+                "code": "string",
+                "symbol": "string",
+                "short_desc": "string",
+                "long_desc": "string",
+                "images": [
+                  "string"
+                ],
+                "audio": "string",
+                "3d_render": "string"
+              },
+              "gps": "string",
+              "address": {
+                "door": "string",
+                "name": "string",
+                "building": "string",
+                "street": "string",
+                "locality": "string",
+                "ward": "string",
+                "city": "string",
+                "state": "string",
+                "country": "string",
+                "area_code": "string"
+              },
+              "station_code": "string",
+              "city": {
+                "name": "string",
+                "code": "string"
+              },
+              "country": {
+                "name": "string",
+                "code": "string"
+              },
+              "circle": "string",
+              "polygon": "string",
+              "3dspace": "string"
+            }
+          ],
+          "tags": [
+            {
+              "additionalProp1": "string",
+              "additionalProp2": "string",
+              "additionalProp3": "string"
+            }
+          ]
+        },
+        "provider_location": {
+          "id": "string",
+          "descriptor": {
+            "name": "string",
+            "code": "string",
+            "symbol": "string",
+            "short_desc": "string",
+            "long_desc": "string",
+            "images": [
+              "string"
+            ],
+            "audio": "string",
+            "3d_render": "string"
+          },
+          "gps": "string",
+          "address": {
+            "door": "string",
+            "name": "string",
+            "building": "string",
+            "street": "string",
+            "locality": "string",
+            "ward": "string",
+            "city": "string",
+            "state": "string",
+            "country": "string",
+            "area_code": "string"
+          },
+          "station_code": "string",
+          "city": {
+            "name": "string",
+            "code": "string"
+          },
+          "country": {
+            "name": "string",
+            "code": "string"
+          },
+          "circle": "string",
+          "polygon": "string",
+          "3dspace": "string"
+        },
+        "items": [
+          {
+            "id": "string",
+            "parent_item_id": "string",
+            "descriptor": {
+              "name": "string",
+              "code": "string",
+              "symbol": "string",
+              "short_desc": "string",
+              "long_desc": "string",
+              "images": [
+                "string"
+              ],
+              "audio": "string",
+              "3d_render": "string"
+            },
+            "price": {
+              "currency": "string",
+              "value": "string",
+              "estimated_value": "string",
+              "computed_value": "string",
+              "listed_value": "string",
+              "offered_value": "string",
+              "minimum_value": "string",
+              "maximum_value": "string"
+            },
+            "category_id": "string",
+            "location_id": "string",
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-25T07:21:57.484Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-25T07:21:57.484Z",
+                "end": "2021-03-25T07:21:57.484Z"
+              },
+              "days": "string"
+            },
+            "matched": true,
+            "related": true,
+            "recommended": true,
+            "tags": [
+              {
+                "additionalProp1": "string",
+                "additionalProp2": "string",
+                "additionalProp3": "string"
+              }
+            ],
+            "quantity": {
+              "allocated": {
+                "count": 0,
+                "measure": {
+                  "type": "CONSTANT",
+                  "value": 0,
+                  "estimated_value": 0,
+                  "computed_value": 0,
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "unit": "string"
+                }
+              },
+              "available": {
+                "count": 0,
+                "measure": {
+                  "type": "CONSTANT",
+                  "value": 0,
+                  "estimated_value": 0,
+                  "computed_value": 0,
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "unit": "string"
+                }
+              },
+              "maximum": {
+                "count": 0,
+                "measure": {
+                  "type": "CONSTANT",
+                  "value": 0,
+                  "estimated_value": 0,
+                  "computed_value": 0,
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "unit": "string"
+                }
+              },
+              "minimum": {
+                "count": 0,
+                "measure": {
+                  "type": "CONSTANT",
+                  "value": 0,
+                  "estimated_value": 0,
+                  "computed_value": 0,
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "unit": "string"
+                }
+              },
+              "selected": {
+                "count": 0,
+                "measure": {
+                  "type": "CONSTANT",
+                  "value": 0,
+                  "estimated_value": 0,
+                  "computed_value": 0,
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "unit": "string"
+                }
+              }
+            }
+          }
+        ],
+        "add_ons": [
+          {
+            "id": "string",
+            "descriptor": {
+              "name": "string",
+              "code": "string",
+              "symbol": "string",
+              "short_desc": "string",
+              "long_desc": "string",
+              "images": [
+                "string"
+              ],
+              "audio": "string",
+              "3d_render": "string"
+            },
+            "price": {
+              "currency": "string",
+              "value": "string",
+              "estimated_value": "string",
+              "computed_value": "string",
+              "listed_value": "string",
+              "offered_value": "string",
+              "minimum_value": "string",
+              "maximum_value": "string"
+            }
+          }
+        ],
+        "offers": [
+          {
+            "id": "string",
+            "descriptor": {
+              "name": "string",
+              "code": "string",
+              "symbol": "string",
+              "short_desc": "string",
+              "long_desc": "string",
+              "images": [
+                "string"
+              ],
+              "audio": "string",
+              "3d_render": "string"
+            },
+            "location_ids": [
+              "string"
+            ],
+            "category_ids": [
+              "string"
+            ],
+            "item_ids": [
+              "string"
+            ],
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-25T07:21:57.485Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-25T07:21:57.485Z",
+                "end": "2021-03-25T07:21:57.485Z"
+              },
+              "days": "string"
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "string",
+            "value": "string",
+            "estimated_value": "string",
+            "computed_value": "string",
+            "listed_value": "string",
+            "offered_value": "string",
+            "minimum_value": "string",
+            "maximum_value": "string"
+          },
+          "breakup": [
+            {
+              "type": "item",
+              "ref_id": "string",
+              "title": "string",
+              "price": {
+                "currency": "string",
+                "value": "string",
+                "estimated_value": "string",
+                "computed_value": "string",
+                "listed_value": "string",
+                "offered_value": "string",
+                "minimum_value": "string",
+                "maximum_value": "string"
+              }
+            }
+          ],
+          "ttl": "string"
+        }
+      }
+    },
+    "error": {
+      "type": "CONTEXT-ERROR",
+      "code": "string",
+      "path": "string",
+      "message": "string"
+    }
+  }

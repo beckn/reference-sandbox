@@ -1,0 +1,7 @@
+{
+  "bg_uri": "http://localhost:5000",
+  "bpp_id": "MOCK_BPP3_v2",
+  "bpp_uri": "http://localhost:3004",
+  "port": "3004",
+  "delay": 1000
+}

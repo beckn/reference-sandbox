@@ -1,0 +1,59 @@
+{
+    "context": {
+        "domain": "domain",
+        "country": "string",
+        "city": "string",
+        "action": "search",
+        "core_version": "string",
+        "bap_id": "string",
+        "bap_uri": "string",
+        "bpp_id": "string",
+        "bpp_uri": "string",
+        "transaction_id": "string",
+        "message_id": "string",
+        "timestamp": "2021-03-25T07:20:28.048Z",
+        "key": "string",
+        "ttl": "string"
+    },
+    "message": {
+        "selected": {
+            "provider": {
+                "id": "string",
+                "locations": [
+                    {
+                        "id": "string"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "string",
+                    "quantity": {
+                        "count": 0,
+                        "measure": {
+                            "type": "CONSTANT",
+                            "value": 0,
+                            "estimated_value": 0,
+                            "computed_value": 0,
+                            "range": {
+                                "min": 0,
+                                "max": 0
+                            },
+                            "unit": "string"
+                        }
+                    }
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": "string"
+                }
+            ],
+            "offers": [
+                {
+                    "id": "string"
+                }
+            ]
+        }
+    }
+}

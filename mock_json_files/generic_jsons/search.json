@@ -1,0 +1,235 @@
+{
+    "context": {
+      "domain": "domain",
+      "country": "string",
+      "city": "string",
+      "action": "search",
+      "core_version": "string",
+      "bap_id": "string",
+      "bap_uri": "string",
+      "bpp_id": "string",
+      "bpp_uri": "string",
+      "transaction_id": "string",
+      "message_id": "string",
+      "timestamp": "2021-03-22T05:48:04.938Z",
+      "key": "string",
+      "ttl": "string"
+    },
+    "message": {
+      "intent": {
+        "query_string": "string",
+        "provider": {
+          "id": "string",
+          "descriptor": {
+            "name": "string",
+            "code": "string",
+            "symbol": "string",
+            "short_desc": "string",
+            "long_desc": "string",
+            "images": [
+              "string"
+            ],
+            "audio": "string",
+            "3d_render": "string"
+          },
+          "locations": [
+            {
+              "id": "string"
+            }
+          ]
+        },
+        "fulfillment": {
+          "id": "string",
+          "start": {
+            "location": {
+              "id": "string",
+              "descriptor": {
+                "name": "string",
+                "code": "string",
+                "symbol": "string",
+                "short_desc": "string",
+                "long_desc": "string",
+                "images": [
+                  "string"
+                ],
+                "audio": "string",
+                "3d_render": "string"
+              },
+              "gps": "string",
+              "address": {
+                "door": "string",
+                "name": "string",
+                "building": "string",
+                "street": "string",
+                "locality": "string",
+                "ward": "string",
+                "city": "string",
+                "state": "string",
+                "country": "string",
+                "area_code": "string"
+              },
+              "station_code": "string",
+              "city": {
+                "name": "string",
+                "code": "string"
+              },
+              "country": {
+                "name": "string",
+                "code": "string"
+              },
+              "circle": "string",
+              "polygon": "string",
+              "3dspace": "string"
+            },
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-22T05:48:04.938Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-22T05:48:04.938Z",
+                "end": "2021-03-22T05:48:04.938Z"
+              },
+              "days": "string"
+            }
+          },
+          "end": {
+            "location": {
+              "id": "string",
+              "descriptor": {
+                "name": "string",
+                "code": "string",
+                "symbol": "string",
+                "short_desc": "string",
+                "long_desc": "string",
+                "images": [
+                  "string"
+                ],
+                "audio": "string",
+                "3d_render": "string"
+              },
+              "gps": "string",
+              "address": {
+                "door": "string",
+                "name": "string",
+                "building": "string",
+                "street": "string",
+                "locality": "string",
+                "ward": "string",
+                "city": "string",
+                "state": "string",
+                "country": "string",
+                "area_code": "string"
+              },
+              "station_code": "string",
+              "city": {
+                "name": "string",
+                "code": "string"
+              },
+              "country": {
+                "name": "string",
+                "code": "string"
+              },
+              "circle": "string",
+              "polygon": "string",
+              "3dspace": "string"
+            },
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-22T05:48:04.938Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-22T05:48:04.938Z",
+                "end": "2021-03-22T05:48:04.938Z"
+              },
+              "days": "string"
+            }
+          },
+          "tags": {
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          }
+        },
+        "payment": {
+          "uri": "string",
+          "tl_method": "http/get",
+          "params": {
+            "transaction_id": "string",
+            "amount": "string",
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          },
+          "type": "ON-ORDER",
+          "status": "PAID",
+          "time": {
+            "label": "string",
+            "timestamp": "2021-03-22T05:48:04.938Z",
+            "duration": "string",
+            "range": {
+              "start": "2021-03-22T05:48:04.938Z",
+              "end": "2021-03-22T05:48:04.938Z"
+            },
+            "days": "string"
+          }
+        },
+        "category": {
+          "id": "string",
+          "descriptor": {
+            "name": "string",
+            "code": "string",
+            "symbol": "string",
+            "short_desc": "string",
+            "long_desc": "string",
+            "images": [
+              "string"
+            ],
+            "audio": "string",
+            "3d_render": "string"
+          },
+          "time": {
+            "label": "string",
+            "timestamp": "2021-03-22T05:48:04.938Z",
+            "duration": "string",
+            "range": {
+              "start": "2021-03-22T05:48:04.938Z",
+              "end": "2021-03-22T05:48:04.938Z"
+            },
+            "days": "string"
+          },
+          "tags": [
+            {
+              "additionalProp1": "string",
+              "additionalProp2": "string",
+              "additionalProp3": "string"
+            }
+          ]
+        },
+        "offer": {
+          "id": "string",
+          "descriptor": {
+            "name": "string"
+          }
+        },
+        "item": {
+          "id": "string",
+          "descriptor": {
+            "name": "string",
+            "tags": {
+              "additionalProp1": "string",
+              "additionalProp2": "string",
+              "additionalProp3": "string"
+            }
+          }
+        },
+        "purpose": "string",
+        "tags": [
+          {
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          }
+        ]
+      }
+    }
+  }

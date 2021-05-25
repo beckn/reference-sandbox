@@ -1,0 +1,303 @@
+{
+    "context": {
+      "domain": "test",
+      "country": "string",
+      "city": "string",
+      "action": "init",
+      "core_version": "string",
+      "bap_id": "string",
+      "bap_uri": "string",
+      "bpp_id": "string",
+      "bpp_uri": "string",
+      "transaction_id": "string",
+      "message_id": "string",
+      "timestamp": "2021-03-30T12:14:23.863Z",
+      "key": "string",
+      "ttl": "string"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "string",
+          "locations": [
+            {
+              "id": "string"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "string",
+            "quantity": {
+              "count": 0,
+              "measure": {
+                "type": "CONSTANT",
+                "value": 0,
+                "estimated_value": 0,
+                "computed_value": 0,
+                "range": {
+                  "min": 0,
+                  "max": 0
+                },
+                "unit": "string"
+              }
+            }
+          }
+        ],
+        "add_ons": [
+          {
+            "id": "string"
+          }
+        ],
+        "offers": [
+          {
+            "id": "string"
+          }
+        ],
+        "billing": {
+          "name": "string",
+          "organization": {
+            "name": "string",
+            "cred": "string"
+          },
+          "address": {
+            "door": "string",
+            "name": "string",
+            "building": "string",
+            "street": "string",
+            "locality": "string",
+            "ward": "string",
+            "city": "string",
+            "state": "string",
+            "country": "string",
+            "area_code": "string"
+          },
+          "email": "user@example.com",
+          "phone": "string",
+          "time": {
+            "label": "string",
+            "timestamp": "2021-03-30T12:14:23.863Z",
+            "duration": "string",
+            "range": {
+              "start": "2021-03-30T12:14:23.863Z",
+              "end": "2021-03-30T12:14:23.863Z"
+            },
+            "days": "string"
+          },
+          "tax_number": "string",
+          "created_at": "2021-03-30T12:14:23.863Z",
+          "updated_at": "2021-03-30T12:14:23.863Z"
+        },
+        "fulfillment": {
+          "id": "string",
+          "type": "string",
+          "state": {
+            "descriptor": {
+              "name": "string",
+              "code": "string",
+              "symbol": "string",
+              "short_desc": "string",
+              "long_desc": "string",
+              "images": [
+                "string"
+              ],
+              "audio": "string",
+              "3d_render": "string"
+            },
+            "updated_at": "2021-03-30T12:14:23.863Z",
+            "updated_by": "string"
+          },
+          "tracking": false,
+          "agent": {
+            "name": {
+              "full": "string",
+              "additional_name": "string",
+              "family_name": "string",
+              "given_name": "string",
+              "call_sign": "string",
+              "honorific_prefix": "string",
+              "honorific_suffix": "string"
+            },
+            "image": "string",
+            "dob": "2021-03-30",
+            "gender": "string",
+            "cred": "string",
+            "tags": [
+              {
+                "additionalProp1": "string",
+                "additionalProp2": "string",
+                "additionalProp3": "string"
+              }
+            ],
+            "phone": "string",
+            "email": "string"
+          },
+          "vehicle": {
+            "category": "string",
+            "capacity": 0,
+            "make": "string",
+            "model": "string",
+            "size": "string",
+            "variant": "string",
+            "color": "string",
+            "energy_type": "string",
+            "registration": "string"
+          },
+          "start": {
+            "location": {
+              "id": "string",
+              "descriptor": {
+                "name": "string",
+                "code": "string",
+                "symbol": "string",
+                "short_desc": "string",
+                "long_desc": "string",
+                "images": [
+                  "string"
+                ],
+                "audio": "string",
+                "3d_render": "string"
+              },
+              "gps": "string",
+              "address": {
+                "door": "string",
+                "name": "string",
+                "building": "string",
+                "street": "string",
+                "locality": "string",
+                "ward": "string",
+                "city": "string",
+                "state": "string",
+                "country": "string",
+                "area_code": "string"
+              },
+              "station_code": "string",
+              "city": {
+                "name": "string",
+                "code": "string"
+              },
+              "country": {
+                "name": "string",
+                "code": "string"
+              },
+              "circle": "string",
+              "polygon": "string",
+              "3dspace": "string"
+            },
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-30T12:14:23.864Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-30T12:14:23.864Z",
+                "end": "2021-03-30T12:14:23.864Z"
+              },
+              "days": "string"
+            },
+            "instructions": {
+              "name": "string",
+              "code": "string",
+              "symbol": "string",
+              "short_desc": "string",
+              "long_desc": "string",
+              "images": [
+                "string"
+              ],
+              "audio": "string",
+              "3d_render": "string"
+            },
+            "contact": {
+              "phone": "string",
+              "email": "string",
+              "tags": {
+                "additionalProp1": "string",
+                "additionalProp2": "string",
+                "additionalProp3": "string"
+              }
+            }
+          },
+          "end": {
+            "location": {
+              "id": "string",
+              "descriptor": {
+                "name": "string",
+                "code": "string",
+                "symbol": "string",
+                "short_desc": "string",
+                "long_desc": "string",
+                "images": [
+                  "string"
+                ],
+                "audio": "string",
+                "3d_render": "string"
+              },
+              "gps": "string",
+              "address": {
+                "door": "string",
+                "name": "string",
+                "building": "string",
+                "street": "string",
+                "locality": "string",
+                "ward": "string",
+                "city": "string",
+                "state": "string",
+                "country": "string",
+                "area_code": "string"
+              },
+              "station_code": "string",
+              "city": {
+                "name": "string",
+                "code": "string"
+              },
+              "country": {
+                "name": "string",
+                "code": "string"
+              },
+              "circle": "string",
+              "polygon": "string",
+              "3dspace": "string"
+            },
+            "time": {
+              "label": "string",
+              "timestamp": "2021-03-30T12:14:23.864Z",
+              "duration": "string",
+              "range": {
+                "start": "2021-03-30T12:14:23.864Z",
+                "end": "2021-03-30T12:14:23.864Z"
+              },
+              "days": "string"
+            },
+            "instructions": {
+              "name": "string",
+              "code": "string",
+              "symbol": "string",
+              "short_desc": "string",
+              "long_desc": "string",
+              "images": [
+                "string"
+              ],
+              "audio": "string",
+              "3d_render": "string"
+            },
+            "contact": {
+              "phone": "string",
+              "email": "string",
+              "tags": {
+                "additionalProp1": "string",
+                "additionalProp2": "string",
+                "additionalProp3": "string"
+              }
+            }
+          },
+          "purpose": "string",
+          "tags": [
+            {
+              "additionalProp1": "string",
+              "additionalProp2": "string",
+              "additionalProp3": "string"
+            }
+          ]
+        }
+      }
+    }
+  }

@@ -1,0 +1,23 @@
+{
+    "context": {
+      "domain": "string",
+      "country": "string",
+      "city": "string",
+      "action": "ack",
+      "core_version": "string",
+      "bap_id": "string",
+      "bap_uri": "string",
+      "bpp_id": "string",
+      "bpp_uri": "string",
+      "transaction_id": "string",
+      "message_id": "string",
+      "timestamp": "2021-03-24T08:15:18.620Z",
+      "key": "string",
+      "ttl": "string"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }

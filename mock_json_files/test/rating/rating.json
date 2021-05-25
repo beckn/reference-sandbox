@@ -1,0 +1,22 @@
+{
+    "context": {
+      "domain": "string",
+      "country": "string",
+      "city": "string",
+      "action": "search",
+      "core_version": "string",
+      "bap_id": "string",
+      "bap_uri": "string",
+      "bpp_id": "string",
+      "bpp_uri": "string",
+      "transaction_id": "string",
+      "message_id": "string",
+      "timestamp": "2021-03-30T12:27:53.861Z",
+      "key": "string",
+      "ttl": "string"
+    },
+    "message": {
+      "id": "string",
+      "value": 5
+    }
+  }

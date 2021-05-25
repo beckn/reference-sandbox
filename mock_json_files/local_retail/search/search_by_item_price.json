@@ -1,0 +1,44 @@
+{
+    "context": {
+        "domain": "local_retail",
+        "country": "string",
+        "city": "string",
+        "action": "search",
+        "core_version": "string",
+        "bap_id": "string",
+        "bap_uri": "string",
+        "bpp_id": "string",
+        "bpp_uri": "string",
+        "transaction_id": "string",
+        "message_id": "string",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "key": "string",
+        "ttl": "string"
+    },
+    "message": {
+        "intent" : {
+            "item": {
+                "descriptor" : {
+                    "name" : "JBL headphones"
+                },
+                "price" : {
+                    "currency": "INR",
+                    "minimum_value": "1000",
+                    "maximum_value": "4000"
+                }
+            },
+            "fulfillment": {
+                "start" : {
+                    "location" : {
+                        "gps" : "12.4535445,77.9283792"
+                    }
+                },
+                "end" : {
+                    "location" : {
+                        "gps" : "12.4535445,77.9283792"
+                    }
+                }
+            }
+        }
+    }
+}

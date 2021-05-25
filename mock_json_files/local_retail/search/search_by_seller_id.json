@@ -1,0 +1,25 @@
+{
+    "context": {
+        "domain": "local_retail",
+        "country": "string",
+        "city": "string",
+        "action": "search",
+        "core_version": "string",
+        "bap_id": "string",
+        "bap_uri": "string",
+        "bpp_id": "string",
+        "bpp_uri": "string",
+        "transaction_id": "string",
+        "message_id": "string",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "key": "string",
+        "ttl": "string"
+    },
+    "message": {
+        "intent" : {
+            "provider": {
+                "id" : "./retail.kirana/ind.blr/pooja-stores@lrdn.bpp.shopez.com.provider"
+            }
+        }
+    }
+}

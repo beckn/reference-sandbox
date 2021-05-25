@@ -1,0 +1,29 @@
+{
+    "context": {
+      "domain": "test",
+      "country": "string",
+      "city": "string",
+      "action": "on_support",
+      "core_version": "string",
+      "bap_id": "string",
+      "bap_uri": "string",
+      "bpp_id": "string",
+      "bpp_uri": "string",
+      "transaction_id": "string",
+      "message_id": "string",
+      "timestamp": "2021-03-30T12:25:31.333Z",
+      "key": "string",
+      "ttl": "string"
+    },
+    "message": {
+      "phone": "string",
+      "email": "user@example.com",
+      "uri": "string"
+    },
+    "error": {
+      "type": "CONTEXT-ERROR",
+      "code": "string",
+      "path": "string",
+      "message": "string"
+    }
+  }

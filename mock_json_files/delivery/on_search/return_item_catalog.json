@@ -1,0 +1,60 @@
+{
+    "context": {
+        "domain": "delivery",
+        "country": "string",
+        "city": "string",
+        "action": "on_search",
+        "core_version": "string",
+        "bap_id": "string",
+        "bap_uri": "string",
+        "bpp_id": "string",
+        "bpp_uri": "string",
+        "transaction_id": "string",
+        "message_id": "string",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "key": "string",
+        "ttl": "string"
+    },
+    "message": {
+        "catalog" : {
+            "id": "./logistics.hyperlocal-delivery/ind.blr/lrdn.bpp.fastlogistics.com",
+            "descriptor": {
+                "name": "Fast Logistics"
+            },
+            "providers" : [
+                {
+                    "id": "./logistics.hyperlocal-delivery/ind.blr/fastlogistics@lrdn.bpp.fastlogistics.com.provider",
+                    "descriptor" : {
+                        "name": "Fast Logistics"
+                    },
+                    "items" : [
+                        {
+                            "id": "./logistics.hyperlocal-delivery/ind.blr/fastlogistics.standard-delivery@lrdn.bpp.fastlogistics.com.item",
+                            "descriptor" : {
+                                "name" : "Standard Delivery"
+                            },"price" : {
+                                "currency": "INR",
+                                "value": "40"
+                            },
+                            "matched": true,
+                            "recommended": true
+                        },
+                        {
+                            "id": "./logistics.hyperlocal-delivery/ind.blr/fastlogistics.express-delivery@lrdn.bpp.fastlogistics.com.item",
+                            "descriptor" : {
+                                "name" : "Express Delivery"
+                            },
+                            "price" : {
+                                "currency": "INR",
+                                "value": "60"
+                            },
+                            "matched": true,
+                            "recommended": true
+                        }
+                    ],
+                    "matched": true
+                }
+            ]
+        }
+    }
+}

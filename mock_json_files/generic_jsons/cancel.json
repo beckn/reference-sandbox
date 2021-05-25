@@ -1,0 +1,34 @@
+{
+    "context": {
+        "domain": "test",
+        "country": "string",
+        "city": "string",
+        "action": "cancel",
+        "core_version": "string",
+        "bap_id": "string",
+        "bap_uri": "string",
+        "bpp_id": "string",
+        "bpp_uri": "string",
+        "transaction_id": "string",
+        "message_id": "string",
+        "timestamp": "2021-03-30T12:20:04.403Z",
+        "key": "string",
+        "ttl": "string"
+    },
+    "message": {
+        "order_id": "string",
+        "cancellation_reason_id": "string",
+        "descriptor": {
+            "name": "string",
+            "code": "string",
+            "symbol": "string",
+            "short_desc": "string",
+            "long_desc": "string",
+            "images": [
+                "string"
+            ],
+            "audio": "string",
+            "3d_render": "string"
+        }
+    }
+}

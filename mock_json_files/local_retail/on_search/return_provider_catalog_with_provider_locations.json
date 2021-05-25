@@ -1,0 +1,66 @@
+{
+    "context": {
+        "domain": "local_retail",
+        "country": "string",
+        "city": "string",
+        "action": "on_search",
+        "core_version": "string",
+        "bap_id": "string",
+        "bap_uri": "string",
+        "bpp_id": "string",
+        "bpp_uri": "string",
+        "transaction_id": "string",
+        "message_id": "string",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "key": "string",
+        "ttl": "string"
+    },
+    "message": {
+        "catalog" : {
+            "id": "./retail.kirana/ind.blr/lrdn.bpp.shopez.com",
+            "descriptor": {
+                "name": "Shop EZ"
+            },
+            "providers" : [
+                {
+                    "id": "./retail.kirana/ind.blr/pooja-stores@lrdn.bpp.shopez.com.provider",
+                    "descriptor" : {
+                        "name": "Pooja Stores"
+                    },
+                    "locations": [
+                        {
+                            "id": "./retail.kirana/ind.blr/pooja-stores.koramangala-4th-block@lrdn.bpp.shopez.com.provider_location",
+                            "gps": "12.9349377,77.6055586"
+                        }
+                    ],
+                    "matched": true
+                },
+                {
+                    "id": "./retail.kirana/ind.blr/nilgiris@lrdn.bpp.shopez.com.provider",
+                    "descriptor" : {
+                        "name": "Nilgiris"
+                    },
+                    "locations": [
+                        {
+                            "id": "./retail.kirana/ind.blr/nilgiris.koramangala-4th-block@lrdn.bpp.shopez.com.provider_location",
+                            "gps": "12.9349406,77.6208795"
+                        }
+                    ],
+                    "matched": true
+                },
+                {
+                    "id": "./retail.kirana/ind.blr/food-mall@lrdn.bpp.shopez.com",
+                    "descriptor" : {
+                        "name": "Food Mall"
+                    },
+                    "locations": [
+                        {
+                            "id": "./retail.kirana/ind.blr/food-mall.koramangala-4th-block@lrdn.bpp.shopez.com.provider_location"
+                        }
+                    ],
+                    "matched": true
+                }
+            ]
+        }
+    }
+}
