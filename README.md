@@ -108,4 +108,4 @@ Header value : on_search/return_item_catalog
 ```
 The above call will trigger the `on_search/return_item_catalog` use case from the `delivery` domain to the BPP at `http://13.235.139.60:6666` and will send the response back to `http://13.235.139.60:4444` if called directly or to the BG (`http://13.235.139.60:5555`) if the BG is called and the BG will route the response back to `http://13.235.139.60:4444`.
 
-The supported usecses are stored in the mock_json_files folder
+The supported usecses are stored in the mock_json_files folder. More use case jsons may be added to the folder as required.
