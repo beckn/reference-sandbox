@@ -152,19 +152,19 @@
 	"variable": [
 		{
 			"key": "bg-uri",
-			"value": "http://13.235.139.60:7777"
+			"value": "http://13.235.139.60/sandbox/bg"
 		},
 		{
 			"key": "bap-uri",
-			"value": "http://13.235.139.60:4000"
+			"value": "http://13.235.139.60/sandbox/bap"
 		},
 		{
 			"key": "bpp1-uri",
-			"value": "http://13.235.139.60:4444"
+			"value": "http://13.235.139.60/sandbox/bpp1"
 		},
 		{
 			"key": "bpp2-uri",
-			"value": "http://13.235.139.60:5555"
+			"value": "http://13.235.139.60/sandbox/bpp2"
 		}
 	]
 }
