@@ -11,11 +11,11 @@ MOCK BPP2 (1 of the 2 mock Beckn Provider Platform server) (code in /bap/)
 Apart from these servers there are 2 more componenets, a react frontend to view the details and an admin backend to change the settings of a mock server.
 
 
-* Admin frontend app url : http://13.235.139.60:3000/login
-* BG : http://13.235.139.60:7777
-* BAP : http://13.235.139.60:4000
-* BPP1 : http://13.235.139.60:4444
-* BPP2 : http://13.235.139.60:5555
+* Admin frontend app url : http://13.235.139.60:5555/login
+* BG : http://13.235.139.60/sandbox/bg
+* BAP : http://13.235.139.60/sandbox/bap
+* BPP1 : http://13.235.139.60/sandbox/bpp1
+* BPP2 : http://13.235.139.60/sandbox/bpp2
 
 ### Trigger Mock BAP
 To trigger a search request from the mock BAP server we can use the *POST/trigger/search* endpoint with the following body :
