@@ -1,0 +1,113 @@
+{
+    "context": {
+        "domain": "nic2004:60221",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "0.9.1",
+        "bap_id": "https://mock_bap.com/",
+        "bap_uri": "https://mock_bap.com/beckn/",
+        "bpp_id": "https://mock_bpp.com/",
+        "bpp_uri": "https://mock_bpp.com/beckn/",
+        "transaction_id": "1209849124",
+        "message_id": "12341242343",
+        "timestamp": "2021-03-23T10:00:40.065Z"
+    },
+    "message": {
+        "order": {
+            "id":"trip_1",
+            "state":"Waiting for passenger",
+            "items":[
+                {
+                    "id": "sedan_spot",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "billing": {
+                "name": "John Doe",
+                "address": {
+                    "door": "21A",
+                    "name": "ABC Apartments",
+                    "locality": "HSR Layout",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560102"
+                },
+                "email": "user@example.com",
+                "phone": "+919876543210"
+            },
+            "fulfillment": {
+                "tracking": true,
+                "start": {
+                    "location": {
+                        "id": "user-location",
+                        "descriptor": {
+                            "name": "Current user location"
+                        },
+                        "gps": "12.9349377,77.6055586"
+                    },
+                    "instructions": {
+                        "name": "pick up instructions",
+                        "short_desc": "Ask doorman to ring 21A"
+                    },
+                    "time": {
+                        "label": "ETA",
+                        "duration": "P12M"
+                    },
+                    "contact": {
+                        "phone": "+919999999999",
+                        "email": "test@example.com"
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.914028, 77.638698"
+                    }
+                },
+                "agent": {
+                    "name": "Joe",
+                    "image": "string",
+                    "dob": "1990-08-17",
+                    "gender": "Male",
+                    "phone": "9876543210"
+                }
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "180"
+                },
+                "breakup": [
+                    {
+                        "title": "Sedan Spot Booking",
+                        "price": {
+                            "currency": "INR",
+                            "value": "170"
+                        }
+                    },
+                    {
+                        "title": "Service Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "uri": "https://api.bpp.com/pay?amt=$180&mode=upi&vpa=bpp@upi",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "180",
+                    "mode": "upi",
+                    "vpa": "bpp@upi"
+                },
+                "type": "ON-FULFILLMENT",
+                "status": "NOT-PAID"
+            }
+        }
+    }
+}

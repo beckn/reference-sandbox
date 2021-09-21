@@ -1,0 +1,95 @@
+{
+    "context": {
+        "domain": "nic2004:85195",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "0.9.2",
+        "bap_id": "https://mock_bap.com/",
+        "bap_uri": "https://mock_bap.com/beckn/",
+        "transaction_id": "1239890342",
+        "message_id": "123793824",
+        "timestamp": "2021-03-23T10:00:40.065Z"
+    },
+    "message": {
+        "order": {
+            "id": "order_1",
+            "state": "Cancelled",
+            "items": [
+                {
+                    "id": "health_checkup",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "billing": {
+                "name": "John Doe",
+                "address": {
+                    "door": "21A",
+                    "name": "ABC Apartments",
+                    "locality": "HSR Layout",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560102"
+                },
+                "email": "user@example.com",
+                "phone": "+919876543210"
+            },
+            "fulfillment": {
+                "end": {
+                    "location": {
+                        "id": "srs-koramangala",
+                        "gps": "12.9349377,77.6055586"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2021-08-11T04:30:00.000Z",
+                            "end": "2021-08-11T05:30:00.000Z"
+                        }
+                    },
+                    "contact": {
+                        "phone": "+919876543210",
+                        "email": "user@example.com"
+                    }
+                }
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1100"
+                },
+                "breakup": [
+                    {
+                        "title": "Lab Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1000"
+                        }
+                    },
+                    {
+                        "title": "Service Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100"
+                        }
+                    }
+                ],
+                "ttl": "P1H"
+            },
+            "payment": {
+                "uri": "https://api.bpp.com/pay?amt=$amount&txn_id=ksh87yriuro34iyr3p4&mode=upi&vpa=bpp@upi",
+                "tl_method": "http/get",
+                "params": {
+                    "transaction_id": "ksh87yriuro34iyr3p4",
+                    "amount": "1100",
+                    "mode": "upi",
+                    "vpa": "bpp@upi"
+                },
+                "type": "ON-FULFILLMENT",
+                "status": "NOT-PAID"
+            }
+        }
+    }
+}

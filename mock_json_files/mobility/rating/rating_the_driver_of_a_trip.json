@@ -1,0 +1,20 @@
+{
+    "context": {
+        "domain": "nic2004:60221",
+        "country": "IND",
+        "city": "std:080",
+        "action": "rating",
+        "core_version": "0.9.1",
+        "bap_id": "https://mock_bap.com/",
+        "bap_uri": "https://mock_bap.com/beckn/",
+        "bpp_id": "https://mock_bpp.com/",
+        "bpp_uri": "https://mock_bpp.com/beckn/",
+        "transaction_id": "1209849124",
+        "message_id": "12341242345",
+        "timestamp": "2021-03-23T10:00:40.065Z"
+    },
+    "message": {
+        "id": "trip_1",
+        "value": "4"
+    }
+}

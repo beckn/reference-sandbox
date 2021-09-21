@@ -1,0 +1,30 @@
+{
+    "context": {
+        "domain": "delivery",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.2",
+        "bap_id": "https://mock_bap.com/",
+        "bap_uri": "https://mock_bap.com/beckn/",
+        "transaction_id": "1239890342",
+        "message_id": "123793824",
+        "timestamp": "2021-03-23T10:00:40.065Z"
+    },
+    "message": {
+        "intent" : {
+            "fulfillment": {
+                "start" : {
+                    "location" : {
+                        "gps" : "12.4535445,77.9283792"
+                    }
+                },
+                "end" : {
+                    "location" : {
+                        "gps" : "12.4535445,77.9283792"
+                    }
+                }
+            }
+        }
+    }
+}
